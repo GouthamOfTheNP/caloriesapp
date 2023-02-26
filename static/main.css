@@ -1,0 +1,40 @@
+body {
+    margin: 10px 100px 10px 10px;
+    font-family: "Helevetica";
+    background-color: black;
+}
+
+h1 {
+    color: #cdcdcd;
+}
+p {
+    color: #fffffe;
+}
+
+h3 {
+    color: #cdcccc;
+}
+
+label {
+    color: #fffffe;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 5px 12px;
+    border: 2px;
+    border-radius: 6px;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 4px 10px;
+    background-color: YellowGreen;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+a {
+    color: teal;
+}

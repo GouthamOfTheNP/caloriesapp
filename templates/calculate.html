@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculate Calories</title>
+	<link rel="stylesheet" type="text/css" href="../static/main.css">
+</head>
+<body>
+	<h1>Calories Calculation Form</h1>
+	<p>Fill in the form and click the button to know how many calories you need!</p>
+	<p>Let's get some info about you first</p>
+	<form method="post" action="/calories-form/">
+		{{calc_form.weight.label}} {{calc_form.weight}}
+		{{calc_form.height.label}} {{calc_form.height}}
+		{{calc_form.age.label}} {{calc_form.age}}
+		<hr>
+		<p>Today's weather counts too <br>
+		Tell us where you are so we include today's temperature in the calculations</p>
+		{{calc_form.city.label}} {{calc_form.city}}
+		{{calc_form.country.label}} {{calc_form.country}}
+		<hr>
+		{{calc_form.submit}}
+	</form>
+	<p>{{calories}}</p>
+</body>
+</html>
